@@ -2,7 +2,7 @@
 
 ## Live App 
 
-A live version of the app can be accessed [here](). 
+A live version of the app can be accessed [here](https://wishlist4u-client.vercel.app/). 
 
 To demo WishList4U, log in with: 
 * User Name: Test_User
@@ -10,35 +10,23 @@ To demo WishList4U, log in with:
 
 ## Current Features
 
+### Main Page
+![Main Page](https://i.imgur.com/uNXAyJg.png)
+
 ### Register Account
-![Registration Page]()
+![Registration Page](https://i.imgur.com/FoP1hcI.png)
 
 ### Login
-![Login Page]()
+![Login Page](https://i.imgur.com/erPMVRl.png)
 
 ### View Lists
-![Main Page not logged-in]()
-![Main Page logged-in]()
-
-### Add New List
-![Add List Form]()
-![List Added]()
+![Main Page logged-in](https://i.imgur.com/uBvypdy.png)
 
 ### Delete List
-
 Once you're logged-in select the delete list button.
 
-### View List and Wishes
-![WishList4U List Page with wishes]()
-
-### Edit Wish
-![Edit Wish Form]()
-Changed the 'z' to an 's'
-![Edited Wish]()
-
-### Add Wish
-![Add Wish Form]()
-![Wish Added]()
+### View Wishes List
+![WishList4U List Page with wishes](https://i.imgur.com/n4JQmCF.png)
 
 ### Delete Wish
 Select the delete wish button. 
@@ -57,8 +45,8 @@ Select the delete wish button.
 * PostgreSQL
 
 ### APIs: 
-* WishList4U API [documentation]()
+* WishList4U API [documentation](https://github.com/jyip01/wishlist4u-api)
 
 ## Associated Repositories
 
-This is the repository for WishList4U's client. The repository for WishList4U's server can be found [here]().
+This is the repository for WishList4U's client. The repository for WishList4U's server can be found [here](https://github.com/jyip01/wishlist4u-api).

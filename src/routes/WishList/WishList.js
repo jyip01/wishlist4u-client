@@ -32,7 +32,7 @@ export default class WishList extends Component {
         ListApiService.getList(listId)
         .then(this.context.setList)
         .catch(this.context.setError)
-        ListApiService.getListWishes(listId)
+        ListApiService.getWishLists(listId)
         .then(this.context.setWishes)
         .catch(this.context.setError)
     }
@@ -55,7 +55,7 @@ export default class WishList extends Component {
         return (
             <ul className='WishList__wishes'>
                 {wishes.map(wish => 
-                  <Wish onDelete={this.onDelete} listId={listId} key={wish.id} id={wish.id} title={wish.wish_title} url={wish.wish_url}/>
+                  <Wish onDelete={this.onDelete} listId={listId} key={wish.id+wish.id} id={wish.id} title={wish.wish_title} url={wish.wish_url}/>
                 )}
             </ul>
         )

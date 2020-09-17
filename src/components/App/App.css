@@ -2,8 +2,10 @@
     height: 100vh;
     padding-top: 20px;
     padding-bottom: 20px;
-    max-width: 500px;
+    width: 100%;
     margin: 0 auto;
+    background: url('../../images/list2.jpeg') no-repeat center right;
+    background-size: cover;
   }
   
   .App__header {
@@ -15,5 +17,23 @@
     height: calc(100vh - 70px);
     overflow: auto;
     margin-top: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 40px; 
+  }
+
+  @media only screen and (min-width: 700px) {
+    .loginForm{
+      width:50%;
+    }
+  }
+  
+  @media only screen and (min-width: 900px) {
+    .loginForm{
+      width:40%;
+    }
+  }
+  
+  @media only screen and (min-width: 1000px) {
+    .loginForm{
+      width:30%;
+    }
   }

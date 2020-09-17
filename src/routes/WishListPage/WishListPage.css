@@ -1,6 +1,6 @@
 .Button__AddList{
     background-color: rgba(228, 228, 250, 0.831);
-    border: none;
+    border: 1px solid rgba(31, 31, 41, 0.824);
     color: rgb(37, 35, 58);
     font-size: 13px;
     margin-top: 10px;
@@ -12,6 +12,12 @@
   padding: 5px;
 }
 
+.WishListPage__Landing p{
+  color: black;
+  text-align: center;
+  font-size: 15px;
+}
+
 .WishListPage__ButtonAndFormContainer{
   display: flex;
   flex-direction: column;
@@ -21,17 +27,47 @@
 .WishListPage__Landing-demo-credentials{
   text-align: center;
   list-style-type: none;
-  font-weight: 320;
+  font-weight: bold;
+  color: black;
+  text-shadow: 2px 2px 2px cornflowerblue;
 }
 
 .WishListPage__Landing-header{
   text-align: center;
+  text-decoration: underline cornflowerblue;
+  text-decoration-style: wavy;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.WishListPage{
+  position: relative;
+  background-color:  rgba(238, 230, 255, 0.577);
+  width: 100%;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.WishListPage:hover{
+  position: relative;
+  top: 5px;
+}
+
+.signinLink{
+  color: red;
+  text-shadow: 0 0 1px black;
+}
+
+.signinLink:hover{
+  color: cornflowerblue;
+  text-shadow: 0 0 3px black;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .AddPlaceHolder{
   text-align: center;
   font-weight: 400;
-  background-color: rgba(31, 30, 48, 0.886);
-  color: rgb(189, 170, 228);
+  color: black;
   text-shadow: rgb(238, 230, 255);
 }

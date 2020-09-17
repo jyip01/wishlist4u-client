@@ -28,11 +28,11 @@ export default class Wish extends Component {
     renderWish () {
 
         return (
-            <li className='WishList__wish'>
+            <li className='WishList__wish card'>
             {(this.state.edit) 
               ? <EditWishForm id={this.props.id} title={this.props.title} url={this.props.url} edit={this.editWishButtonHandler}/> 
               : <>  
-                    <p className='WishList__wish_title'>
+                    <p className='WishList__wish_title title'>
                         {this.props.title}
                     </p>
                     <p className='WishList__wish_url'>

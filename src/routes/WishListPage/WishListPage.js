@@ -6,6 +6,7 @@ import ListWishList from "../../components/ListWishList/ListWishList";
 import ListForm from "../../components/ListForm/ListForm";
 import TokenService from '../../services/token-service'
 import './WishListPage.css'
+import { Link } from 'react-router-dom'
 
 export default class WishListPage extends Component {
   state = {
@@ -71,7 +72,7 @@ export default class WishListPage extends Component {
       )
     else 
       return (
-        <p className='AddPlaceHolder'>Please login or create an account to add a new list</p>
+        <p className='AddPlaceHolder'>Please <Link className='signinLink' to='/login'>login</Link> or <Link className='signinLink' to='/register'>create an account</Link> to add a new list</p>
       )
   }
 

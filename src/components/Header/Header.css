@@ -3,6 +3,7 @@
     display: flex;
     align-items: normal;
     justify-content: space-between;
+    margin-bottom: 60px;
   }
   
   .Header h1 {
@@ -11,19 +12,49 @@
   
   .Header h1 a {
     text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline cornflowerblue;
+    text-decoration-style: wavy;
+    text-shadow: 0 0 6px #FF0000, 0 0 10px cornflowerblue;
   }
   
   .Header a {
-    color: #444;
+    color:cornsilk;
+  }
+
+  .Header h1 a:hover {
+    color: cornflowerblue;
+    font-size: 30px;
   }
   
   .Header__not-logged-in {
     display: flex;
     flex-direction: column;
+    font-weight: bold;
+    text-shadow: 0 0 10px black;
+  }
+
+  .Header__not-logged-in a:hover {
+    color: cornflowerblue;
+    font-size: 18px;
+    text-shadow: 0 0 6px #FF0000, 0 0 10px cornflowerblue;
   }
   
   .Header__not-logged-in .Hyph {
     display: none;
+  }
+
+  .Header__logged-in {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    text-shadow: 0 0 10px black;
+  }
+
+  .Header__logged-in a:hover {
+    color: cornflowerblue;
+    font-size: 18px;
+    text-shadow: 0 0 6px #FF0000, 0 0 10px cornflowerblue;
   }
   
   @media screen and (min-width: 450px) {
