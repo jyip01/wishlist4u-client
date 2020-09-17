@@ -1,0 +1,47 @@
+.ListWishList {
+    background: none;
+    font-size: smaller;
+    display: block;
+    padding: 10px 10px 0;
+    border-bottom: black solid 1px;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .ListWishList__Container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Button__DeleteList{
+    background-color: rgba(31, 31, 41, 0.824);
+    border: none;
+    color: rgb(197, 194, 228);
+    font-size: 10px;
+  }
+  
+  .ListWishList:hover {
+    cursor: pointer;
+    background-color: #f7f8f9;
+  }
+  
+  .ListWishList,
+  .ListWishList:visited {
+    color: #555;
+  }
+  
+  .ListWishList__header {
+    align-items: baseline;
+    display: flex;
+    justify-content: center;
+  }
+  .ListWishList__heading {
+    margin: 0;
+  }
+
+  .ListWishList__description {
+      font-style: italic;
+      color: rgb(27, 32, 52)
+  }
+  

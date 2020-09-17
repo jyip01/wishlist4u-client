@@ -1,0 +1,37 @@
+.Button__AddList{
+    background-color: rgba(228, 228, 250, 0.831);
+    border: none;
+    color: rgb(37, 35, 58);
+    font-size: 13px;
+    margin-top: 10px;
+  }
+
+.WishListPage__Landing{
+  background-color: rgba(238, 230, 255, 0.577);
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+
+.WishListPage__ButtonAndFormContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.WishListPage__Landing-demo-credentials{
+  text-align: center;
+  list-style-type: none;
+  font-weight: 320;
+}
+
+.WishListPage__Landing-header{
+  text-align: center;
+}
+
+.AddPlaceHolder{
+  text-align: center;
+  font-weight: 400;
+  background-color: rgba(31, 30, 48, 0.886);
+  color: rgb(189, 170, 228);
+  text-shadow: rgb(238, 230, 255);
+}
