@@ -27,7 +27,8 @@ export default class WishListPage extends Component {
       return (
         <div className='WishListPage__Landing'>
           <h2 className='WishListPage__Landing-header'>Welcome to WishList4U</h2>
-          <p>We've added some lists to get you started, before adding your own list or making new wishes, please Login or Create an Account.</p>
+          <p>Need help keeping track of all your wants and needs AS WELL as your friends and family's? Look no further, WishList4U will help you keep track of all that!</p>
+          <p>We've added some lists to get you started and give you an idea of how to use it, before adding your own list or making new wishes, please Login or Create an Account.</p>
           <p> If you're just here to demo the app please use the credentials below:</p>
           <ul className='WishListPage__Landing-demo-credentials'>
             <li>User Name: Test_User</li>

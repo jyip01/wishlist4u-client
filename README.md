@@ -31,6 +31,9 @@ Once you're logged-in select the delete list button.
 ### Delete Wish
 Select the delete wish button. 
 
+## Summary
+WishList4U is a web application that allows users to create wishlists for themselves. For example, you can create a list for your birthday or for your children's birthday and continue to add until the day comes. The goal of WishList4U is to make it easy to keep track of your wants or needs. 
+
 ## Technologies Used
 
 ### Front End: 
