@@ -1,9 +1,11 @@
 .Button__AddList{
     background-color: rgba(228, 228, 250, 0.831);
     border: 1px solid rgba(31, 31, 41, 0.824);
+    border-radius: 6px;
     color: rgb(37, 35, 58);
     font-size: 13px;
     margin-top: 10px;
+    font-weight: bold;
   }
 
 .WishListPage__Landing{
@@ -42,7 +44,7 @@
 
 .WishListPage{
   position: relative;
-  background-color:  rgba(238, 230, 255, 0.577);
+  
   width: 100%;
   margin-left: 0;
   margin-top: 0;

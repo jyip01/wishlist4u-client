@@ -27,7 +27,7 @@ export default class ListWishList extends Component {
 
 
         return (
-            <div className='ListWishList__Container'>
+            <div className='ListWishList__Container card'>
             <Link to={`/list/${list.id}`} className='ListWishList'>
                 <header className='ListWishList__header'>
                     <h2 className='ListWishList__heading'>

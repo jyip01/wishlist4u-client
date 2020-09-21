@@ -1,10 +1,12 @@
 .Button__AddWish{
     background-color: rgba(228, 228, 250, 0.831);
     border: 1px solid rgba(31, 31, 41, 0.824);
+    border-radius: 6px;
     color: rgb(37, 35, 58);
     font-size: 13px;
     text-shadow: rgba(255, 255, 255, 0.995);
     margin-bottom: 5px;
+    font-weight: bold;
   }
 
 .WishList h2{
