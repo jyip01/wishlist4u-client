@@ -1,16 +1,17 @@
-import React, {Component} from 'react'
-import ListContext from '../../contexts/ListContext'
-import {Button} from '../../components/Utils/Utils'
-import EditWishForm from '../../components/WishForm/EditWishForm'
-import ListApiService from '../../services/list-api-service'
-import './Wish.css'
+import React, {Component} from 'react';
+import ListContext from '../../contexts/ListContext';
+import { Link } from 'react-router-dom';
+import {Button} from '../../components/Utils/Utils';
+import EditWishForm from '../../components/WishForm/EditWishForm';
+import ListApiService from '../../services/list-api-service';
+import './Wish.css';
 
 
 export default class Wish extends Component {
 
     state = {
         edit: false,
-    }
+    };
 
     static contextType = ListContext
 
@@ -36,7 +37,7 @@ export default class Wish extends Component {
                         {this.props.title}
                     </p>
                     <p className='WishList__wish_url'>
-                        <a href={this.props.url}>{this.props.url}</a> 
+                        <a href={this.props.url} target="_blank" rel="noopener noreferrer">Link to Wish</a> 
                     </p> 
                 </>
             }
@@ -50,10 +51,10 @@ export default class Wish extends Component {
                - Delete Wish
             </Button>
             </li>
-        )
+        );
     }
 
     render() {
-       return this.renderWish()
+       return this.renderWish();
     }
 }

@@ -1,17 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export const nullList = {
     list_title: '',
     list_description: '',
     user: {}
-}
+};
 
 export const nullWish = {
     wish_title: '',
     wish_url: '',
     user: {},
 
-}
+};
 
 const ListContext = React.createContext({
     list: nullList,
@@ -25,9 +25,9 @@ const ListContext = React.createContext({
     addWish: () => {},
     updateWish: () => {},
     deleteWish: () => {},
-})
+});
 
-export default ListContext
+export default ListContext;
 
 export class ListProvider extends Component {
     state = {
@@ -89,6 +89,6 @@ export class ListProvider extends Component {
             <ListContext.Provider value={value}>
                 {this.props.children}
             </ListContext.Provider>
-        )
+        );
     }
-}
+};

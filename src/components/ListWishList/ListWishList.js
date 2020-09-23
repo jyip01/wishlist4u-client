@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import {Button} from '../Utils/Utils'
-import ListApiService from '../../services/list-api-service'
-import TokenService from '../../services/token-service'
-import './ListWishList.css'
+import {Button} from '../Utils/Utils';
+import ListApiService from '../../services/list-api-service';
+import TokenService from '../../services/token-service';
+import './ListWishList.css';
 
 
 
@@ -17,17 +17,17 @@ export default class ListWishList extends Component {
     renderDeleteButton = (props) => {
         const list = this.props.list
         if (TokenService.hasAuthToken()) 
-        return (<Button className='Button__DeleteList'  onClick={e => this.deleteListButtonHandler(list.id)}>Delete List</Button>) 
+        return (<Button className='Button__DeleteList'  onClick={e => this.deleteListButtonHandler(list.id)}>Delete List</Button>);
         else
         return <> </> 
     }
 
     render() {
-        const { list } = this.props
+        const { list } = this.props;
 
 
         return (
-            <div className='ListWishList__Container card'>
+            <div className='ListWishList__Container desc'>
             <Link to={`/list/${list.id}`} className='ListWishList'>
                 <header className='ListWishList__header'>
                     <h2 className='ListWishList__heading'>
@@ -38,6 +38,6 @@ export default class ListWishList extends Component {
             </Link>
             <this.renderDeleteButton/>
             </div>
-        )    
+        );    
     }
 }

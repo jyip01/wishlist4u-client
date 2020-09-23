@@ -12,47 +12,31 @@ import './App.css';
 
 
 class App extends Component {
-  state = { hasError: false}
+  state = { hasError: false};
 
   static getDerivedStateFromError(error) {
-    console.error(error)
-    return { hasError: true } 
+    console.error(error);
+    return { hasError: true };
   }
 
   render() {
     return (
       <div className='App'>
         <header className='App__header'>
-          <Route 
-          component={Header} />
+          <Route component={Header}/>
         </header>
         <main className='App__main'>
           {this.state.hasError && <p className='red'>There was an error! Oh no!</p>}
           <Switch>
-           <Route
-             exact
-             path={'/'}
-             component={WishListPage}
-           />
-           <PublicOnlyRoute
-             path={'/login'}
-             component={LoginPage}
-           />
-           <PublicOnlyRoute
-             path={'/register'}
-             component={RegistrationPage}
-           />
-           <PrivateRoute
-             path={'/list/:listId'}
-             component={WishList}
-           />
-           <Route
-             component={NotFoundPage}
-           />
+           <Route exact path={'/'} component={WishListPage}/>
+           <PublicOnlyRoute path={'/login'} component={LoginPage}/>
+           <PublicOnlyRoute path={'/register'} component={RegistrationPage}/>
+           <PrivateRoute path={'/list/:listId'} component={WishList}/>
+           <Route component={NotFoundPage}/>
           </Switch>
         </main>
       </div>
-    )
+    );
   }
 
 }

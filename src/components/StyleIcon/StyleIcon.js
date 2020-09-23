@@ -6,5 +6,5 @@ const styleIconMap = {
 }
 
 export default function StyleIcon({ style='default' }){
-    return styleIconMap[style]
+    return styleIconMap[style];
 }

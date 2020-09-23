@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import ListContext from '../../contexts/ListContext'
-import ListApiService from '../../services/list-api-service'
-import { Button, Input } from '../Utils/Utils'
-import './WishForm.css'
+import React, { Component } from 'react';
+import ListContext from '../../contexts/ListContext';
+import ListApiService from '../../services/list-api-service';
+import { Button, Input } from '../Utils/Utils';
+import './WishForm.css';
 
 
 export default class EditWishForm extends Component {
@@ -10,7 +10,7 @@ export default class EditWishForm extends Component {
     state = {
         title: null,
         url: null,
-    }
+    };
 
     static contextType = ListContext
 
@@ -68,6 +68,6 @@ export default class EditWishForm extends Component {
                   Change wish
               </Button>
             </form>
-        )
+        );
     }
 }

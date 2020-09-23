@@ -8,9 +8,9 @@ const WishListContext = React.createContext({
     clearError: () => {},
     setListWishList: () => {},
     addList: () => {},
-})
+});
 
-export default WishListContext
+export default WishListContext;
 
 export class WishListProvider extends Component {
     state = {
@@ -51,6 +51,6 @@ export class WishListProvider extends Component {
             <WishListContext.Provider value={value}>
                 {this.props.children}
             </WishListContext.Provider>
-        )
+        );
     }
-}
+};

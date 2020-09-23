@@ -7,7 +7,7 @@ export default class RegistrationForm extends Component {
         onRegistrationSuccess: () => {}
     }
 
-    state = { error: null }
+    state = { error: null };
 
     handleSubmit = e => {
         e.preventDefault()
@@ -27,7 +27,7 @@ export default class RegistrationForm extends Component {
           })
           .catch(res => {
               this.setState({ error: res.error })
-          })
+          });
     }
 
     render() {
@@ -78,6 +78,6 @@ export default class RegistrationForm extends Component {
                     Register
                 </Button>
             </form>
-        )
+        );
     }
 }

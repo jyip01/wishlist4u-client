@@ -1,16 +1,16 @@
-import React, {Component} from 'react'
-import ListContext from '../../contexts/ListContext'
-import ListApiService from '../../services/list-api-service'
-import WishForm from '../../components/WishForm/WishForm'
-import Wish from '../../components/Wish/Wish'
-import { Section, Button } from '../../components/Utils/Utils'
-import './WishList.css'
+import React, {Component} from 'react';
+import ListContext from '../../contexts/ListContext';
+import ListApiService from '../../services/list-api-service';
+import WishForm from '../../components/WishForm/WishForm';
+import Wish from '../../components/Wish/Wish';
+import { Section, Button } from '../../components/Utils/Utils';
+import './WishList.css';
 
 export default class WishList extends Component {
     state = {
         add: false,
         reduce: false,
-    }
+    };
 
     static defaultProps = {
         match: { params: {} },
@@ -85,9 +85,9 @@ export default class WishList extends Component {
             content = this.renderList()
         }
         return (
-            <Section className='WishList'>
+            <Section className='WishList card'>
                 {content}
             </Section>
-        )
+        );
     }
-}
+};

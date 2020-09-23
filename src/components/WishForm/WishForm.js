@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import ListContext from '../../contexts/ListContext'
-import ListApiService from '../../services/list-api-service'
-import { Button, Input, Required } from '../Utils/Utils'
-import './WishForm.css'
+import React, { Component } from 'react';
+import ListContext from '../../contexts/ListContext';
+import ListApiService from '../../services/list-api-service';
+import { Button, Input, Required } from '../Utils/Utils';
+import './WishForm.css';
 
 
 export default class WishForm extends Component {
@@ -58,7 +58,7 @@ export default class WishForm extends Component {
                             Make a wish 
                         </Button>
                         </form>
-            )
+            );
     }
 }
 

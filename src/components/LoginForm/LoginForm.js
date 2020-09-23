@@ -8,7 +8,7 @@ export default class LoginForm extends Component {
         onLoginSuccess: () => {}
     }
 
-    state = { error: null}
+    state = { error: null};
 
     handleSubmitJwtAuth = e => {
         e.preventDefault()
@@ -27,7 +27,7 @@ export default class LoginForm extends Component {
           })
           .catch(res => {
             this.setState({error: res.error})
-          })
+          });
     }
 
     render() {
@@ -67,6 +67,6 @@ export default class LoginForm extends Component {
                   Login
               </Button>
             </form>
-        )
+        );
     }
 }

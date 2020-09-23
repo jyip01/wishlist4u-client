@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import WishListContext from "../../contexts/WishListContext";
 import ListApiService from "../../services/list-api-service";
 import { Button, Input, Required } from "../Utils/Utils";
-import './ListForm.css'
+import './ListForm.css';
 
 export default class ListForm extends Component {
   static contextType = WishListContext;

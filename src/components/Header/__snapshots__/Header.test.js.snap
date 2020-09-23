@@ -9,7 +9,7 @@ exports[`Index Rendering renders the UI as expected 1`] = `
       href="/"
       onClick={[Function]}
     >
-      WishList4U
+       WishList4U 
     </a>
   </h1>
   <div
@@ -19,7 +19,7 @@ exports[`Index Rendering renders the UI as expected 1`] = `
       href="/register"
       onClick={[Function]}
     >
-      Create an account
+       Create an account 
     </a>
     <span
       className="Hyph"
@@ -30,7 +30,7 @@ exports[`Index Rendering renders the UI as expected 1`] = `
       href="/login"
       onClick={[Function]}
     >
-      Log in
+       Log in 
     </a>
   </div>
 </nav>

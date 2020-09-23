@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match with snapshot 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App__header"
+  >
+    <nav
+      className="Header"
+    >
+      <h1>
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+           WishList4U 
+        </a>
+      </h1>
+      <div
+        className="Header__not-logged-in"
+      >
+        <a
+          href="/register"
+          onClick={[Function]}
+        >
+           Create an account 
+        </a>
+        <span
+          className="Hyph"
+        >
+             -   
+        </span>
+        <a
+          href="/login"
+          onClick={[Function]}
+        >
+           Log in 
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main
+    className="App__main"
+  >
+    <div
+      className="WishListPage__Landing"
+    >
+      <h2
+        className="WishListPage__Landing-header"
+      >
+        Welcome to WishList4U
+      </h2>
+      <p>
+        Need help keeping track of all your wants and needs AS WELL as your friends and family? Look no further, WishList4U will help you keep track of all that!
+      </p>
+      <p>
+        We've added some lists to get you started and give you an idea of how to use it, before adding your own list or making new wishes, please Login or Create an Account.
+      </p>
+      <p>
+         If you're just here to demo the app please use the credentials below:
+      </p>
+      <ul
+        className="WishListPage__Landing-demo-credentials"
+      >
+        <li>
+          User Name: Test_User
+        </li>
+        <li>
+          Password: P@ssword1
+        </li>
+      </ul>
+    </div>
+    <section
+      className="Section Section--list WishListPage"
+    />
+    <section
+      className="Section WishListPage__ButtonAndFormContainer"
+    >
+      <p
+        className="AddPlaceHolder"
+      >
+        Please 
+        <a
+          className="signinLink"
+          href="/login"
+          onClick={[Function]}
+        >
+          login
+        </a>
+         or 
+        <a
+          className="signinLink"
+          href="/register"
+          onClick={[Function]}
+        >
+          create an account
+        </a>
+         to add a new list
+      </p>
+    </section>
+  </main>
+</div>
+`;

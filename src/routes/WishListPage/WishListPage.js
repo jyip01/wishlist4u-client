@@ -4,9 +4,9 @@ import ListApiService from "../../services/list-api-service";
 import { Section, Button } from "../../components/Utils/Utils";
 import ListWishList from "../../components/ListWishList/ListWishList";
 import ListForm from "../../components/ListForm/ListForm";
-import TokenService from '../../services/token-service'
-import './WishListPage.css'
-import { Link } from 'react-router-dom'
+import TokenService from '../../services/token-service';
+import './WishListPage.css';
+import { Link } from 'react-router-dom';
 
 export default class WishListPage extends Component {
   state = {
@@ -35,9 +35,9 @@ export default class WishListPage extends Component {
             <li>Password: P@ssword1</li>
           </ul>
         </div>
-      )
+      );
     else
-      return (<> </>)
+      return (<> </>);
   }
 
   addListButtonHandler = () => {
@@ -70,11 +70,11 @@ export default class WishListPage extends Component {
         <Button className='Button__AddList' onClick={() => this.addListButtonHandler()}>
           + Add New List
         </Button>
-      )
+      );
     else 
       return (
         <p className='AddPlaceHolder'>Please <Link className='signinLink' to='/login'>login</Link> or <Link className='signinLink' to='/register'>create an account</Link> to add a new list</p>
-      )
+      );
   }
 
   render() {
@@ -98,4 +98,4 @@ export default class WishListPage extends Component {
       </>
     );
   }
-}
+};
