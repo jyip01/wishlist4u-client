@@ -11,7 +11,7 @@ const ListApiService = {
             (!res.ok)
               ? res.json().then(e => Promise.reject(e))
               : res.json()
-        )
+        );
     },
 
     postList(title, description) {
@@ -30,7 +30,7 @@ const ListApiService = {
             (!res.ok)
               ? res.json().then(e => Promise.reject(e))
               : res.json()
-            )
+            );
     },
 
     getList(listId) {
@@ -43,7 +43,7 @@ const ListApiService = {
             (!res.ok)
               ? res.json().then(e => Promise.reject(e))
               : res.json()
-          )
+          );
     },
     
     deleteList(listId) {
@@ -58,7 +58,7 @@ const ListApiService = {
            (!res.ok)
              ? res.json().then(e => Promise.reject(e))
              : res 
-        )
+        );
     },
 
     getWishLists(listId) {
@@ -71,7 +71,7 @@ const ListApiService = {
             (!res.ok)
               ? res.json().then(e => Promise.reject(e))
               : res.json()
-          )
+          );
     },
 
     postWish(listId, title, url) {
@@ -91,7 +91,7 @@ const ListApiService = {
             (!res.ok)
               ? res.json().then(e => Promise.reject(e))
               : res.json()
-          )
+          );
     },
 
     editWish(listId, wishId, title, url) {
@@ -112,7 +112,7 @@ const ListApiService = {
             (!res.ok)
               ? res.json().then(e => Promise.reject(e))
               : null
-            )
+            );
     },
 
     deleteWish(wishId) {
@@ -127,8 +127,8 @@ const ListApiService = {
            (!res.ok)
              ? res.json().then(e => Promise.reject(e))
              : res 
-        )
+        );
     },
 }
 
-export default ListApiService
+export default ListApiService;
