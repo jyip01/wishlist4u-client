@@ -14,7 +14,8 @@ const ListApiService = {
         );
     },
 
-    postList(title, description) {
+    postList(title, description, user_id) {
+
       return fetch(`${config.API_ENDPOINT}/lists`, {
           method: 'POST',
           headers: {
@@ -24,6 +25,7 @@ const ListApiService = {
           body: JSON.stringify({
               list_title: title,
               list_description: description,
+              user_id
           }),
       })
         .then(res => 

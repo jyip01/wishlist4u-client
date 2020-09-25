@@ -3,6 +3,7 @@ import WishListContext from "../../contexts/WishListContext";
 import ListApiService from "../../services/list-api-service";
 import { Button, Input, Required } from "../Utils/Utils";
 import './ListForm.css';
+import TokenService from "../../services/token-service";
 
 export default class ListForm extends Component {
   static contextType = WishListContext;
@@ -10,8 +11,8 @@ export default class ListForm extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     const { list_title, list_description } = e.target;
-
-    ListApiService.postList(list_title.value, list_description.value)
+    const id = TokenService.readJwtToken().user_id
+    ListApiService.postList(list_title.value, list_description.value, id)
       .then(this.context.addList)
       .then(() => {
         list_description.value = "";
