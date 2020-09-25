@@ -2,8 +2,8 @@ import TokenService from '../services/token-service';
 import config from '../config';
 
 const ListApiService = {
-    getLists() {
-      return fetch(`${config.API_ENDPOINT}/lists`, {
+    getLists(id) {
+      return fetch(`${config.API_ENDPOINT}/lists/users/${id}`, {
           headers: {    
           },
       })

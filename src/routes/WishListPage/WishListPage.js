@@ -17,9 +17,16 @@ export default class WishListPage extends Component {
 
   componentDidMount() {
     this.context.clearError();
-    ListApiService.getLists()
+    if(TokenService.hasAuthToken()){
+      const id = TokenService.readJwtToken().user_id
+
+      ListApiService.getLists(id)
       .then(this.context.setListWishList)
       .catch(this.context.setError);
+    }else{
+      this.props.history.push('/login')
+    }
+    
   }
 
   landingPageLogin = () => {
@@ -60,6 +67,7 @@ export default class WishListPage extends Component {
   renderLists = () => {
     const { listWishList = [] } = this.context;
     return listWishList.map((list) => (
+      TokenService.hasAuthToken() &&
       <ListWishList onDelete={this.refreshLists} key={list.id} list={list} />
     ));
   }
