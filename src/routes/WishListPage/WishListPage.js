@@ -25,7 +25,7 @@ export default class WishListPage extends Component {
       .then(this.context.setListWishList)
       .catch(this.context.setError);
     }else{
-      this.props.history.push('/login')
+      this.props.history.push('/')
     }
     
   }
