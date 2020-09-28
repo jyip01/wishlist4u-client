@@ -8,6 +8,7 @@ import TokenService from '../../services/token-service';
 import './WishListPage.css';
 import { Link } from 'react-router-dom';
 
+
 export default class WishListPage extends Component {
   state = {
     add: false,

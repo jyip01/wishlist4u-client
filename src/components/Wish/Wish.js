@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import ListContext from '../../contexts/ListContext';
-import { Link } from 'react-router-dom';
 import {Button} from '../../components/Utils/Utils';
 import EditWishForm from '../../components/WishForm/EditWishForm';
 import ListApiService from '../../services/list-api-service';

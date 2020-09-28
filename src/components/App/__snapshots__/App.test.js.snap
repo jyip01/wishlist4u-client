@@ -44,61 +44,58 @@ exports[`should match with snapshot 1`] = `
   <main
     className="App__main"
   >
-    <div
-      className="WishListPage__Landing"
+    <section
+      className="Section LoginPage"
     >
-      <h2
-        className="WishListPage__Landing-header"
-      >
-        Welcome to WishList4U
+      <h2>
+        Login
       </h2>
-      <p>
-        Need help keeping track of all your wants and needs AS WELL as your friends and family? Look no further, WishList4U will help you keep track of all that!
-      </p>
-      <p>
-        We've added some lists to get you started and give you an idea of how to use it, before adding your own list or making new wishes, please Login or Create an Account.
-      </p>
-      <p>
-         If you're just here to demo the app please use the credentials below:
-      </p>
-      <ul
-        className="WishListPage__Landing-demo-credentials"
+      <form
+        className="LoginForm"
+        onSubmit={[Function]}
       >
-        <li>
-          User Name: Test_User
-        </li>
-        <li>
-          Password: P@ssword1
-        </li>
-      </ul>
-    </div>
-    <section
-      className="Section Section--list WishListPage"
-    />
-    <section
-      className="Section WishListPage__ButtonAndFormContainer"
-    >
-      <p
-        className="AddPlaceHolder"
-      >
-        Please 
-        <a
-          className="signinLink"
-          href="/login"
-          onClick={[Function]}
+        <div
+          role="alert"
+        />
+        <div
+          className="user_name"
         >
-          login
-        </a>
-         or 
-        <a
-          className="signinLink"
-          href="/register"
-          onClick={[Function]}
+          <label
+            htmlFor="LoginForm__user_name"
+          >
+            User Name
+          </label>
+          <input
+            className="Input "
+            id="LoginForm__user_name"
+            name="user_name"
+            required={true}
+            type="text"
+          />
+        </div>
+        <div
+          className="password"
         >
-          create an account
-        </a>
-         to add a new list
-      </p>
+          <label
+            htmlFor="LoginForm__password"
+          >
+            Password
+          </label>
+          <input
+            className="Input "
+            id="LoginForm__password"
+            name="password"
+            required={true}
+            type="password"
+          />
+        </div>
+        <button
+          className="Button "
+          type="submit"
+        >
+          Login
+        </button>
+      </form>
     </section>
   </main>
 </div>
