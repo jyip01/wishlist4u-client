@@ -1,5 +1,43 @@
+.RegistrationPage{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .RegistrationPage h2{
+    margin-top: 100px;
+    text-align: center;
     text-shadow: 0 0 3px #F00000;
     font-weight: bold;
     text-decoration: underline;
+}
+
+.RegistrationForm label{
+    font-size: 20px;
+}
+
+.RegistrationForm{
+    margin-left: auto;
+    margin-right: auto
+}
+
+@media only screen and (min-width: 700px) {
+    .RegistrationForm{
+      width:50%;
+      height: 50%
+    }
+}
+  
+@media only screen and (min-width: 900px) {
+    .RegistrationForm{
+      width:40%;
+      height: 40%;
+    }
+}
+  
+@media only screen and (min-width: 1000px) {
+    .RegistrationForm{
+      width:30%;
+      height: 30%;
+    }
 }

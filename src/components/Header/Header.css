@@ -61,12 +61,14 @@
     .Header {
       align-items: baseline;
     }
+
     .Header h1 {
-      font-size: 22pt;
+      font-size: 35px;
     }
   
     .Header__not-logged-in {
       flex-direction: row;
+      font-size: 20px;
     }
   
     .Header__not-logged-in .Hyph {
