@@ -24,7 +24,7 @@
 
   .Header h1 a:hover {
     color: cornflowerblue;
-    font-size: 30px;
+    font-size: 37px;
   }
   
   .Header__not-logged-in {
@@ -36,7 +36,7 @@
 
   .Header__not-logged-in a:hover {
     color: cornflowerblue;
-    font-size: 18px;
+    font-size: 22px;
     text-shadow: 0 0 6px #FF0000, 0 0 10px cornflowerblue;
   }
   
@@ -53,7 +53,7 @@
 
   .Header__logged-in a:hover {
     color: cornflowerblue;
-    font-size: 18px;
+    font-size: 22px;
     text-shadow: 0 0 6px #FF0000, 0 0 10px cornflowerblue;
   }
   
