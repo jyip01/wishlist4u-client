@@ -2,7 +2,7 @@
 
 ## Live App 
 
-A live version of the app can be accessed [here](https://wishlist4u-client.vercel.app/). 
+A live version of the app can be accessed [here](https://wishlist4u.jessicayip.dev). 
 
 To demo WishList4U, log in with: 
 * User Name: Test_User
